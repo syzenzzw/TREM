@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: gray;
+    height: 100px;
+    width: 100%;
+    display: flex;
+}
+
+.logo {
+    display: flex;
+}
+
+.texto {
+  font-size: 30px;
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  right: 70px;
+  top: 30px;
+  cursor: pointer;
+  font-family: Arial;
+}
+
+.texto:hover {
+    animation: 1ms;
+    border-radius: 5px;
+    background-color: gainsboro;
+}
+
+body {
+    background-color: gainsboro;
+}
+
+.mapa {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+}
+
