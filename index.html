@@ -40,8 +40,8 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d68949.27256549074!2d-47.53243134942878!3d-24.7371859032727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94daa2105e63d16d%3A0x94c64016b9f93a10!2sIlha%20Comprida%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1725075679247!5m2!1spt-BR!2sbr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
- <label for="seletorcidade">Selecione o embarque</label>
-   <select  id="select">
+ <label for="embarque">Selecione o embarque</label>
+   <select  id="embarque">
 <option value="peruibe">Peruibe</option>
 <option value="itanhaem">Itanhaém</option>
 <option value="mongagua">Mongaguá</option>
@@ -51,6 +51,27 @@
 <option value="guaruja">Guarujá</option>
 
    </select>
+
+   <label for="desembarque">Selecione o desembarque</label>
+   <select  id="desembarque">
+<option value="peruibe">Peruibe</option>
+<option value="itanhaem">Itanhaém</option>
+<option value="mongagua">Mongaguá</option>
+<option value="praia">Praia Grande</option>
+<option value="sv">São Vicente</option>
+<option value="santos">Santos</option>
+<option value="guaruja">Guarujá</option>
+
+   </select>
+
+   <button id="calcular">
+    calcular
+   </button>
+
+   <div id="resultado">
+    <p id="mensagem"></p>
+    <ul id="lista-resultado"></ul>
+   </div>
 
    
 </body>

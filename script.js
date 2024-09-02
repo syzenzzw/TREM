@@ -1,38 +1,64 @@
-const estacoes = ["itariri", "pedro de toledo", "peruibe", "itanhaem", "mongagua", "praia grande", "sao vicente", "santos", "cubatao", "bertioga", "sao sebastiao", "ilha bela"];
- 
-const readline = require('readline-sync');
- 
+const estacoes = ["Peruíbe", "Itanhaém", "Mongaguá", "Praia Grande", "São Vicente", "Santos", "Guarujá"];
 
+
+const listaEstacoes = document.getElementById("lista-estacoes");
+const selectEmbarque = document.getElementById("embarque");
+const selectDesembarque = document.getElementById("desembarque");
+const buttonCalcular = document.getElementById("calcular");
+const buttonLimpar = document.getElementById("limpar");
+const mensagem = document.getElementById("mensagem");
+const listaResultado = document.getElementById("lista-resultado");
+
+estacoes.forEach((estacao, index) => {
+    const li = document.createElement("li");
+    li.textContent = `${index + 1} - ${estacao}`;
+    listaEstacoes.appendChild(li);
  
-// Solicita a estação de desembarque
-console.log("Digite a estação que você desembarcará:");
-const estacaof = readline.question();
+    const optionEmbarque = document.createElement("option");
+    optionEmbarque.value = index;
+    optionEmbarque.textContent = estacao;
+    selectEmbarque.appendChild(optionEmbarque);
  
-// Limpa o console
-console.clear();
+    const optionDesembarque = document.createElement("option");
+    optionDesembarque.value = index;
+    optionDesembarque.textContent = estacao;
+    selectDesembarque.appendChild(optionDesembarque);
+});
  
-let posicaoinicial = 0;
-let posicaofinal = 0;
+// Função para calcular as estações
+function calcular() {}
+    const embarque = parseInt(selectEmbarque.value);
+    const desembarque = parseInt(selectDesembarque.value);
  
-// Encontra as posições das estações
-for (let i = 0; i < estacoes.length; i++) {
-    if (estacoes[i] === estacaoi) {
-        posicaoinicial = i;
+    if (embarque < 0 || embarque >= estacoes.length || desembarque < 0 || desembarque >= estacoes.length || embarque === desembarque) {
+        mensagem.textContent = "Entrada inválida. Certifique-se de que os números estejam entre 1 e 11 e que a estação de desembarque seja diferente da estação de embarque.";
+        listaResultado.innerHTML = "";
+        return;
     }
-    if (estacoes[i] === estacaof) {
-        posicaofinal = i;
+
+    function calcular() {
+        const embarque = parseInt(selectEmbarque.value);
+        const desembarque = parseInt(selectDesembarque.value);
+     
+        if (embarque < 0 || embarque >= estacoes.length || desembarque < 0 || desembarque >= estacoes.length || embarque === desembarque) {
+            mensagem.textContent = "Entrada inválida. Certifique-se de que os números estejam entre 1 e 11 e que a estação de desembarque seja diferente da estação de embarque.";
+            listaResultado.innerHTML = "";
+            return;
+        }
+     
+           const inicio = Math.min(embarque, desembarque);
+        const fim = Math.max(embarque, desembarque);
+     
+        mensagem.textContent = `Você passou por ${fim - inicio} estações.`;
+     
+        listaResultado.innerHTML = "";
+        for (let i = inicio; i <= fim; i++) {
+            const li = document.createElement("li");
+            li.textContent = estacoes[i];
+            listaResultado.appendChild(li);
+        }
     }
-}
- 
-// Exibe as estações entre as duas selecionadas
-for (let i = posicaoinicial; i < posicaofinal; i++) {
-    console.log(estacoes[i]);
-}
- 
-// Limpa o console
-console.clear();
- 
-// Calcula e exibe a diferença de estações
-const res = posicaofinal - posicaoinicial;
-console.log(`Faltam ${res} cidade(s) para chegar a: ${estacaof}`);
+
+    buttonCalcular.addEventListener("click", calcular);
+buttonLimpar.addEventListener("click", limpar);
  
