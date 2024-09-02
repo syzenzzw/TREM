@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    border-bottom-right-radius: 44px;
+    
+}
+
+.logo {
+    display: flex;
+    cursor: pointer;
+}
+
+.suporte {
+  font-size: 15px;
+  display: flex;
+  position: absolute;
+  right: 500px;
+  top: 32px;
+  cursor: pointer;
+  font-family: Arial;
+  color: black;
+}
+
+.suporte:hover {
+    background-color: gainsboro; 
+}
+
+.embarque {
+    font-size: 15px;
+    display: flex;
+    position: absolute;
+    right: 400px;
+    top: 32px;
+    cursor: pointer;
+    font-family: Arial;
+    color: black;
+}
+
+.embarque:hover {
+    background-color: gainsboro;
+}
+
+.mapa2 {
+    font-size: 15px;
+    display: flex;
+    position: absolute;
+    right: 340px;
+    top: 32px;
+    cursor: pointer;
+    font-family: Arial;
+    color: black;
+}
+
+
+.mapa2:hover {
+    background-color: gainsboro;
+}
+
+
+
+body {
+    background-color: 	#4F4F4F;
+}
+
+.mapa {
+    width: 30%;
+    height: 200px;
+    margin-left: 35%;
+    margin-top: 100px;
+}
+
+.user {
+    display: flex;
+    right: 245px;
+    text-align: right;
+    font-family: Arial;
+    color: black;
+    cursor: pointer;
+    position: absolute;
+    gap: 8px;
+    top: 32px;
+    font-size: 15px;
+}
+
+.user:hover {
+    background-color: gainsboro;
+}
+
+.login {
+    width: 17px;
+    height: 17px;
+}
+
+.logobrasil {
+    width: 30px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    top: 25px;
+    left: 1295px;
+    display: flex;
+    position: absolute;
+    cursor: pointer;
+}
+
+.titulo {
+    text-align: center;
+    font-family: Arial;
+    color: gray;
+    margin-top: 30px;
+    vertical-align: 30px;
+}
+
+.mapaa {
+    margin-top: 40px;
+}
+
+#cardproduto {
+    height: 300px;
+    width: 500px;
+    border: solid;
+    
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.card {
+    width: 325px;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.card-content{
+    padding: 16px;
+}
+
+.card-content h3 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.card-content p{
+    color: black;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.card-content .btn{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: #fff;
+}
+
+.card2 {
+    width: 325px;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+    border-radius: 15px;
+    float: right;
+}
+
+.card3 {
+    width: 325px;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.card4 {
+    width: 325px;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.card5 {
+    width: 325px;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.card6 {
+    width: 325px;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
