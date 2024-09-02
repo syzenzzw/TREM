@@ -14,6 +14,7 @@ header {
 
 .logo {
     display: flex;
+    cursor: pointer;
 }
 
 .suporte {
@@ -65,7 +66,7 @@ header {
 
 
 body {
-    background-color: gainsboro;
+    background-color: 	#4F4F4F;
 }
 
 .mapa {
@@ -116,4 +117,23 @@ body {
     margin-top: 30px;
     vertical-align: 30px;
 }
+
+.mapaa {
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
